@@ -1,0 +1,85 @@
+name: tanzanite kernel build
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'arch/**'
+      - 'drivers/**'
+      - 'sound/**'
+      - 'kernel/**'
+      - 'mm/**'
+      - 'net/**'
+      - 'fs/**'
+      - 'crypto/**'
+      - 'block/**'
+      - 'init/**'
+      - 'ipc/**'
+      - 'lib/**'
+      - 'security/**'
+      - 'scripts/**'
+      - 'tools/**'
+      - 'include/**'
+      - 'usr/**'
+      - 'virt/**'
+      - 'Makefile'
+      - 'Kbuild'
+      - 'Kconfig'
+      - '.github/workflows/build.yml'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install deps
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y bc bison flex libssl-dev libelf-dev \
+            python3-pip cpio lz4 git ccache \
+            gcc-aarch64-linux-gnu gcc-arm-linux-gnueabi
+
+      - name: Fetch Proton Clang
+        run: |
+          git clone --depth=1 https://github.com/kdrag0n/proton-clang.git clang
+
+      - name: Build tanzanite_defconfig
+        run: |
+          export ARCH=arm64
+          export LLVM=1
+          export LLVM_IAS=1
+          export PATH="$GITHUB_WORKSPACE/clang/bin:$PATH"
+          export CROSS_COMPILE=aarch64-linux-gnu-
+          export CROSS_COMPILE_COMPAT=arm-linux-gnueabi-
+          make tanzanite_defconfig
+
+      - name: Build Image + modules
+        run: |
+          export ARCH=arm64
+          export LLVM=1
+          export LLVM_IAS=1
+          export PATH="$GITHUB_WORKSPACE/clang/bin:$PATH"
+          export CROSS_COMPILE=aarch64-linux-gnu-
+          export CROSS_COMPILE_COMPAT=arm-linux-gnueabi-
+          make -j$(nproc) Image modules 2>&1 | tee build.log
+
+      - name: Collect artifacts
+        if: always()
+        run: |
+          mkdir -p out
+          cp -v arch/arm64/boot/Image out/ 2>/dev/null || true
+          find . -name '*.ko' | head -n 50 | xargs -r cp -t out/ 2>/dev/null || true
+          cp -v build.log out/ 2>/dev/null || true
+          cp -v .config out/tanzanite_built.config 2>/dev/null || true
+          ls -lh out/
+
+      - name: Upload
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: tanzanite-build
+          path: out/
+          retention-days: 7
