@@ -1,0 +1,300 @@
+IN-TREE SOURCE (154):
+  8250_mtk -> drivers/tty/serial/8250/8250_mtk.c
+  aee_hangdet -> drivers/misc/mediatek/aee/hangdet/aee_hangdet.c
+  aee_rs -> drivers/misc/mediatek/aee/aed/aee_rs.c
+  archcounter_timesync -> drivers/misc/mediatek/cam_timesync/archcounter_timesync.c
+  arm_dsu_pmu -> drivers/perf/arm_dsu_pmu.c
+  audio_ipi -> drivers/misc/mediatek/audio_ipi/common/audio_ipi.c
+  backlight_cooling -> drivers/thermal/mediatek/backlight_cooling.c
+  binder_prio -> drivers/staging/binder_prio/binder_prio.c
+  board_temp -> drivers/thermal/mediatek/board_temp.c
+  bootprof -> drivers/misc/mediatek/mtprof/bootprof.c
+  cache-parity -> drivers/misc/mediatek/sda/cache-parity.c
+  cam_qos -> drivers/misc/mediatek/cameraisp/src/isp_6s/cam_qos.c
+  camera_isp -> drivers/misc/mediatek/cameraisp/src/isp_6s/camera_isp.c
+  camera_mem -> drivers/misc/mediatek/camera_mem/camera_mem.c
+  ccci_auxadc -> drivers/misc/mediatek/eccci/ccci_auxadc.c
+  ccci_fsm_scp -> drivers/misc/mediatek/eccci/fsm/ccci_fsm_scp.c
+  ccci_md_clk -> drivers/misc/mediatek/eccci/ccci_md_clk.c
+  ccci_rtc -> drivers/misc/mediatek/eccci/ccci_rtc.c
+  ccmni -> drivers/misc/mediatek/ccmni/ccmni.c
+  cfg80211 -> drivers/net/wireless/ath/ath6kl/cfg80211.c
+  clk-bringup -> drivers/clk/mediatek/clk-bringup.c
+  clk-common -> drivers/clk/sirf/clk-common.c
+  clk-disable-unused -> drivers/clk/mediatek/clk-disable-unused.c
+  clk-fmeter-mt6789 -> drivers/clk/mediatek/clk-fmeter-mt6789.c
+  clk-mt6789 -> drivers/clk/mediatek/clk-mt6789.c
+  clk-mt6789-audiosys -> drivers/clk/mediatek/clk-mt6789-audiosys.c
+  clk-mt6789-bus -> drivers/clk/mediatek/clk-mt6789-bus.c
+  clk-mt6789-cam -> drivers/clk/mediatek/clk-mt6789-cam.c
+  clk-mt6789-disp_dsc -> drivers/clk/mediatek/clk-mt6789-disp_dsc.c
+  clk-mt6789-i2c -> drivers/clk/mediatek/clk-mt6789-i2c.c
+  clk-mt6789-img -> drivers/clk/mediatek/clk-mt6789-img.c
+  clk-mt6789-impen -> drivers/clk/mediatek/clk-mt6789-impen.c
+  clk-mt6789-mfgcfg -> drivers/clk/mediatek/clk-mt6789-mfgcfg.c
+  clk-mt6789-mmsys -> drivers/clk/mediatek/clk-mt6789-mmsys.c
+  clk-mt6789-vcodec -> drivers/clk/mediatek/clk-mt6789-vcodec.c
+  cmdq-platform-mt6789 -> drivers/misc/mediatek/cmdq/mailbox/cmdq-platform-mt6789.c
+  cmdq_helper_inf -> drivers/misc/mediatek/mdp/cmdq_helper_inf.c
+  dbgtop-drm -> drivers/misc/mediatek/sda/dbgtop-drm.c
+  devmpu -> drivers/soc/mediatek/devmpu/devmpu.c
+  emi-mpu -> drivers/memory/mediatek/emi-mpu.c
+  extcon-mtk-usb -> drivers/misc/mediatek/extcon/extcon-mtk-usb.c
+  extdev_io_class -> drivers/misc/mediatek/subpmic/extdev_io_class.c
+  ged -> drivers/gpu/mediatek/ged/src/ged.c
+  hf_manager -> drivers/misc/mediatek/sensor/2.0/core/hf_manager.c
+  hq_CPU_temp -> drivers/thermal/mediatek/hq_CPU_temp.c
+  hq_adapter_class -> drivers/power/supply/hq_chg/charger_class/hq_adapter_class.c
+  hq_charge_temp -> drivers/thermal/mediatek/hq_charge_temp.c
+  hq_charger_class -> drivers/power/supply/hq_chg/charger_class/hq_charger_class.c
+  hq_cp_class -> drivers/power/supply/hq_chg/charger_class/hq_cp_class.c
+  hq_cp_policy -> drivers/power/supply/hq_chg/charger_policy/hq_cp_policy.c
+  hq_fg_class -> drivers/power/supply/hq_chg/charger_class/hq_fg_class.c
+  hq_led_class -> drivers/power/supply/hq_chg/charger_class/hq_led_class.c
+  hq_pd_adapter -> drivers/power/supply/hq_chg/charger_policy/hq_pd_adapter.c
+  hq_qc_policy -> drivers/power/supply/hq_chg/charger_policy/hq_qc_policy.c
+  hq_voter -> drivers/power/supply/hq_chg/common/hq_voter.c
+  hqsys_misc -> drivers/misc/hqsysfs/hqsys_misc.c
+  hqsys_pcba -> drivers/misc/hqsysfs/hqsys_pcba.c
+  hqsysfs -> drivers/misc/hqsysfs/hqsysfs.c
+  i2c-mt65xx -> drivers/i2c/busses/i2c-mt65xx.c
+  industrialio-triggered-buffer -> drivers/iio/buffer/industrialio-triggered-buffer.c
+  iommu_debug -> drivers/misc/mediatek/iommu/iommu_debug.c
+  iommu_secure -> drivers/misc/mediatek/iommu/iommu_secure.c
+  iommu_test -> drivers/misc/mediatek/iommu/iommu_test.c
+  irq-dbg -> drivers/misc/mediatek/sda/irq-dbg.c
+  kfifo_buf -> drivers/iio/buffer/kfifo_buf.c
+  leds-mtk -> drivers/leds/leds-mtk.c
+  leds-mtk-disp -> drivers/leds/leds-mtk-disp.c
+  leds-mtk-pwm -> drivers/leds/leds-mtk-pwm.c
+  load_track -> drivers/misc/mediatek/performance/load_track/load_track.c
+  log_store -> drivers/misc/mediatek/log_store/log_store.c
+  mac80211 -> drivers/net/wireless/intel/iwlwifi/dvm/mac80211.c
+  mediatek-cpufreq-hw -> drivers/cpufreq/mediatek-cpufreq-hw.c
+  mi_thermal_message -> drivers/thermal/mediatek/mi_thermal_message.c
+  mt6358-accdet -> sound/soc/codecs/mt6358-accdet.c
+  mt6789-mt6366 -> sound/soc/mediatek/mt6789/mt6789-mt6366.c
+  mtk-afe-external -> sound/soc/mediatek/common/mtk-afe-external.c
+  mtk-btcvsd -> sound/soc/mediatek/common/mtk-btcvsd.c
+  mtk-composite -> drivers/misc/mediatek/flashlight/mtk-composite.c
+  mtk-cqdma -> drivers/dma/mediatek/mtk-cqdma.c
+  mtk-dvfsrc-start -> drivers/soc/mediatek/mtk-dvfsrc-start.c
+  mtk-mbox -> drivers/soc/mediatek/mtk-mbox.c
+  mtk-pm-domain-disable-unused -> drivers/soc/mediatek/mtk-pm-domain-disable-unused.c
+  mtk-scp-vow -> sound/soc/mediatek/vow/mtk-scp-vow.c
+  mtk-sp-spk-amp -> sound/soc/mediatek/common/mtk-sp-spk-amp.c
+  mtk_battery_oc_throttling -> drivers/misc/mediatek/power_throttling/mtk_battery_oc_throttling.c
+  mtk_bp_thl -> drivers/misc/mediatek/power_throttling/mtk_bp_thl.c
+  mtk_cm_ipi -> drivers/misc/mediatek/cm_mgr/mtk_cm_ipi.c
+  mtk_cm_mgr_mt6789 -> drivers/misc/mediatek/cm_mgr/mtk_cm_mgr_mt6789.c
+  mtk_cpu_power_throttling -> drivers/misc/mediatek/power_throttling/mtk_cpu_power_throttling.c
+  mtk_disp_sec -> drivers/gpu/drm/mediatek/mediatek_v2/mtk_disp_sec.c
+  mtk_dynamic_loading_throttling -> drivers/misc/mediatek/power_throttling/mtk_dynamic_loading_throttling.c
+  mtk_heap_debug -> drivers/dma-buf/heaps/mtk_heap_debug.c
+  mtk_irtx_pwm -> drivers/misc/mediatek/irtx/mtk_irtx_pwm.c
+  mtk_low_battery_throttling -> drivers/misc/mediatek/power_throttling/mtk_low_battery_throttling.c
+  mtk_md_power_throttling -> drivers/misc/mediatek/power_throttling/mtk_md_power_throttling.c
+  mtk_mdpm -> drivers/misc/mediatek/mdpm/mtk_mdpm.c
+  mtk_pbm -> drivers/misc/mediatek/pbm/mtk_pbm.c
+  mtk_printk_ctrl -> drivers/misc/mediatek/mtprintk/mtk_printk_ctrl.c
+  mtk_rpmsg_mbox -> drivers/rpmsg/mtk_rpmsg_mbox.c
+  mtk_sec_heap -> drivers/dma-buf/heaps/mtk_sec_heap.c
+  mtk_sync -> drivers/gpu/drm/mediatek/mediatek_v2/mtk_sync.c
+  mtk_tinysys_ipi -> drivers/soc/mediatek/mtk_tinysys_ipi.c
+  mtk_wdt -> drivers/watchdog/mtk_wdt.c
+  nu2115 -> drivers/power/supply/hq_chg/nu_charger/chargerpump/nu2115.c
+  pd_dbg_info -> drivers/misc/mediatek/typec/tcpc/pd_dbg_info.c
+  phy-generic -> drivers/usb/phy/phy-generic.c
+  phy-mtk-tphy -> drivers/phy/mediatek/phy-mtk-tphy.c
+  phy-mtk-ufs -> drivers/phy/mediatek/phy-mtk-ufs.c
+  pidmap -> drivers/misc/mediatek/pidmap/pidmap.c
+  pinctrl-mt6789 -> drivers/pinctrl/mediatek/pinctrl-mt6789.c
+  pinctrl-mtk-common-v2_debug -> drivers/pinctrl/mediatek/pinctrl-mtk-common-v2_debug.c
+  pmic_lbat_service -> drivers/misc/mediatek/power_throttling/pmic_lbat_service.c
+  pmic_temp -> drivers/thermal/mediatek/pmic_temp.c
+  pmsr -> drivers/misc/mediatek/pmsr/pmsr.c
+  pwm-mtk-disp -> drivers/pwm/pwm-mtk-disp.c
+  reboot-mode -> drivers/power/reset/reboot-mode.c
+  regmap-spmi -> drivers/base/regmap/regmap-spmi.c
+  regulator-vibrator -> drivers/leds/regulator-vibrator.c
+  reset-ti-syscon -> drivers/reset/reset-ti-syscon.c
+  richtek_spm_cls -> sound/soc/codecs/richtek/richtek_spm_cls.c
+  rpmb-mtk -> drivers/char/rpmb/rpmb-mtk.c
+  rps_perf -> drivers/misc/mediatek/rps/rps_perf.c
+  rt-regmap -> drivers/misc/mediatek/typec/tcpc/rt-regmap.c
+  rt4831a_drv -> drivers/misc/mediatek/gate_ic/rt4831a_drv.c
+  rt5133-regulator -> drivers/regulator/rt5133-regulator.c
+  rt_pd_manager -> drivers/misc/mediatek/typec/tcpc/rt_pd_manager.c
+  rtc-mt6397 -> drivers/rtc/rtc-mt6397.c
+  sc8541_charger -> drivers/power/supply/hq_chg/sc_charger/sc8541_charger.c
+  scheduler -> drivers/gpu/drm/i915/gvt/scheduler.c
+  sec -> drivers/net/wireless/realtek/rtw88/sec.c
+  sec-rng -> drivers/char/hw_random/sec-rng.c
+  simtray -> drivers/misc/mediatek/simtray/simtray.c
+  soc_temp_lvts -> drivers/thermal/mediatek/soc_temp_lvts.c
+  soft_bc12 -> drivers/power/supply/hq_chg/sc_charger/protocol/bc12/soft_bc12.c
+  spi-mt65xx -> drivers/spi/spi-mt65xx.c
+  spmtwam -> drivers/misc/mediatek/pmsr/twam/spmtwam.c
+  subpmic -> drivers/power/supply/hq_chg/sc_charger/subpmic/subpmic.c
+  subpmic_base -> drivers/power/supply/hq_chg/nu_charger/subpmic/subpmic_base.c
+  subpmic_charger -> drivers/power/supply/hq_chg/sc_charger/subpmic/subpmic_charger.c
+  subpmic_chargerpump -> drivers/power/supply/hq_chg/sc_charger/subpmic/subpmic_chargerpump.c
+  subpmic_cid -> drivers/power/supply/hq_chg/sc_charger/subpmic/subpmic_cid.c
+  switch_class -> drivers/switch/switch_class.c
+  syscon-reboot-mode -> drivers/power/reset/syscon-reboot-mode.c
+  system_heap -> drivers/dma-buf/heaps/system_heap.c
+  task_turbo -> drivers/misc/mediatek/task_turbo/task_turbo.c
+  tcpc_sc660x -> drivers/misc/mediatek/typec/tcpc/tcpc_sc660x.c
+  tcpci_late_sync -> drivers/misc/mediatek/typec/tcpc/tcpci_late_sync.c
+  thermal-generic-adc -> drivers/thermal/thermal-generic-adc.c
+  thermal_interface -> drivers/thermal/mediatek/thermal_interface.c
+  thermal_trace -> drivers/thermal/mediatek/thermal_trace.c
+  trace_mmstat -> drivers/misc/mediatek/mmstat/trace_mmstat.c
+  ufs-mediatek-dbg -> drivers/scsi/ufs/ufs-mediatek-dbg.c
+  uload_ind -> drivers/misc/mediatek/performance/uload_ind/uload_ind.c
+  widevine_driver -> drivers/misc/mediatek/widevine_drm/widevine_driver.c
+
+PREBUILT-ONLY, no source (143):
+  adsp.ko (reuse from stock /vendor)
+  aee_aed.ko (reuse from stock /vendor)
+  atf_logger.ko (reuse from stock /vendor)
+  battery_auth_class.ko (reuse from stock /vendor)
+  blocktag.ko (reuse from stock /vendor)
+  bq25960_charger.ko (reuse from stock /vendor)
+  btif_drv.ko (reuse from stock /vendor)
+  c2k_usb.ko (reuse from stock /vendor)
+  c2k_usb_f_via_atc.ko (reuse from stock /vendor)
+  c2k_usb_f_via_ets.ko (reuse from stock /vendor)
+  c2k_usb_f_via_gps.ko (reuse from stock /vendor)
+  c2k_usb_f_via_modem.ko (reuse from stock /vendor)
+  c2k_usb_f_via_pcv.ko (reuse from stock /vendor)
+  camera_dip_isp6s.ko (reuse from stock /vendor)
+  camera_eeprom.ko (reuse from stock /vendor)
+  camera_fdvt_isp51.ko (reuse from stock /vendor)
+  camera_rsc_isp60.ko (reuse from stock /vendor)
+  ccci_ccif.ko (reuse from stock /vendor)
+  ccci_dpmaif.ko (reuse from stock /vendor)
+  ccci_md_all.ko (reuse from stock /vendor)
+  ccci_util_lib.ko (reuse from stock /vendor)
+  clk-chk-mt6789.ko (reuse from stock /vendor)
+  clk-dbg-mt6789.ko (reuse from stock /vendor)
+  clkbuf.ko (reuse from stock /vendor)
+  cmdq-sec-drv.ko (reuse from stock /vendor)
+  connadp.ko (reuse from stock /vendor)
+  cpq.ko (reuse from stock /vendor)
+  cpudvfs.ko (reuse from stock /vendor)
+  cpufreq_sugov_ext.ko (reuse from stock /vendor)
+  cpuqos_v3.ko (reuse from stock /vendor)
+  cqhci.ko (reuse from stock /vendor)
+  device-apc-common.ko (reuse from stock /vendor)
+  device-apc-mt6789.ko (reuse from stock /vendor)
+  ds28e30_verify.ko (reuse from stock /vendor)
+  emi.ko (reuse from stock /vendor)
+  fhctl.ko (reuse from stock /vendor)
+  flashlight.ko (reuse from stock /vendor)
+  flashlights-mt6789-o7.ko (reuse from stock /vendor)
+  fpsgo.ko (reuse from stock /vendor)
+  ft3519t.ko (reuse from stock /vendor)
+  gpueb.ko (reuse from stock /vendor)
+  gz_ipc_mod.ko (reuse from stock /vendor)
+  gz_irq_mod.ko (reuse from stock /vendor)
+  gz_log_mod.ko (reuse from stock /vendor)
+  gz_main_mod.ko (reuse from stock /vendor)
+  gz_trusty_mod.ko (reuse from stock /vendor)
+  gz_tz_system.ko (reuse from stock /vendor)
+  gz_virtio_mod.ko (reuse from stock /vendor)
+  hq_fuel_algorithm.ko (reuse from stock /vendor)
+  hq_notify.ko (reuse from stock /vendor)
+  imgsensor_isp6s.ko (reuse from stock /vendor)
+  iommu_gz.ko (reuse from stock /vendor)
+  lct_tp.ko (reuse from stock /vendor)
+  main2af.ko (reuse from stock /vendor)
+  main3af.ko (reuse from stock /vendor)
+  main_chg.ko (reuse from stock /vendor)
+  mainaf.ko (reuse from stock /vendor)
+  mali_kbase_mt6789.ko (reuse from stock /vendor)
+  mcDrvModule.ko (reuse from stock /vendor)
+  mcupm.ko (reuse from stock /vendor)
+  md_cooling_all.ko (reuse from stock /vendor)
+  mddp.ko (reuse from stock /vendor)
+  mdp_drv_mt6789.ko (reuse from stock /vendor)
+  mediatek-drm.ko (reuse from stock /vendor)
+  mi_mempool.ko (reuse from stock /vendor)
+  mtk-lpm.ko (reuse from stock /vendor)
+  mtk-lpm-dbg-common-v1.ko (reuse from stock /vendor)
+  mtk-lpm-dbg-mt6789.ko (reuse from stock /vendor)
+  mtk-lpm-plat-v1.ko (reuse from stock /vendor)
+  mtk-pwm.ko (reuse from stock /vendor)
+  mtk-scp-audio.ko (reuse from stock /vendor)
+  mtk-scp-audiocommon.ko (reuse from stock /vendor)
+  mtk-ssc.ko (reuse from stock /vendor)
+  mtk-ssc-dbg-v2.ko (reuse from stock /vendor)
+  mtk-swpm.ko (reuse from stock /vendor)
+  mtk-swpm-dbg-common-v1.ko (reuse from stock /vendor)
+  mtk-swpm-dbg-v6789.ko (reuse from stock /vendor)
+  mtk-vcodec-common.ko (reuse from stock /vendor)
+  mtk-vcodec-dec-v1.ko (reuse from stock /vendor)
+  mtk-vcodec-enc-v1.ko (reuse from stock /vendor)
+  mtk-vcu.ko (reuse from stock /vendor)
+  mtk-vow.ko (reuse from stock /vendor)
+  mtk_cm_mgr.ko (reuse from stock /vendor)
+  mtk_core_ctl.ko (reuse from stock /vendor)
+  mtk_fpsgo.ko (reuse from stock /vendor)
+  mtk_gpu_hal.ko (reuse from stock /vendor)
+  mtk_gpu_qos.ko (reuse from stock /vendor)
+  mtk_gpufreq_mt6789.ko (reuse from stock /vendor)
+  mtk_gpufreq_wrapper.ko (reuse from stock /vendor)
+  mtk_jpeg.ko (reuse from stock /vendor)
+  mtk_perf_common.ko (reuse from stock /vendor)
+  mtk_perf_ioctl.ko (reuse from stock /vendor)
+  mtk_qos.ko (reuse from stock /vendor)
+  mtk_slbc.ko (reuse from stock /vendor)
+  mtk_u_ether.ko (reuse from stock /vendor)
+  mtk_usb_f_rndis.ko (reuse from stock /vendor)
+  musb_boost.ko (reuse from stock /vendor)
+  musb_hdrc.ko (reuse from stock /vendor)
+  musb_main.ko (reuse from stock /vendor)
+  nvmem-mt635x-efuse.ko (reuse from stock /vendor)
+  nvmem_mtk-devinfo.ko (reuse from stock /vendor)
+  panel-o7-38-0c-0a-dsc-vdo.ko (reuse from stock /vendor)
+  pd-chk-mt6789.ko (reuse from stock /vendor)
+  perf_helper.ko (reuse from stock /vendor)
+  perfhelper.ko (reuse from stock /vendor)
+  pinctrl-mtk-v2.ko (reuse from stock /vendor)
+  pn560_device_modules.ko (reuse from stock /vendor)
+  rpmb.ko (reuse from stock /vendor)
+  scp.ko (reuse from stock /vendor)
+  sensorhub.ko (reuse from stock /vendor)
+  slg_verify.ko (reuse from stock /vendor)
+  snd-soc-audiodsp-common.ko (reuse from stock /vendor)
+  snd-soc-aw87xx.ko (reuse from stock /vendor)
+  snd-soc-mt6366.ko (reuse from stock /vendor)
+  snd-soc-mt6789-afe.ko (reuse from stock /vendor)
+  snd-soc-mtk-common.ko (reuse from stock /vendor)
+  snd-soc-rt5512.ko (reuse from stock /vendor)
+  snd-soc-sipa.ko (reuse from stock /vendor)
+  snd-soc-sipa-tuning.ko (reuse from stock /vendor)
+  snd-soc-tfa98xx.ko (reuse from stock /vendor)
+  spmi-mtk-pmif.ko (reuse from stock /vendor)
+  sspm_v3.ko (reuse from stock /vendor)
+  stick_verify.ko (reuse from stock /vendor)
+  sub2af.ko (reuse from stock /vendor)
+  subaf.ko (reuse from stock /vendor)
+  subpmic_nu.ko (reuse from stock /vendor)
+  subpmic_sy.ko (reuse from stock /vendor)
+  subpmic_sy_charger.ko (reuse from stock /vendor)
+  tcpc_ba41a.ko (reuse from stock /vendor)
+  tcpc_class.ko (reuse from stock /vendor)
+  tcpc_nu6601.ko (reuse from stock /vendor)
+  tee.ko (reuse from stock /vendor)
+  teeperf.ko (reuse from stock /vendor)
+  tinysys-scmi.ko (reuse from stock /vendor)
+  tms_device_modules.ko (reuse from stock /vendor)
+  trusted_mem.ko (reuse from stock /vendor)
+  ufs-mediatek-mod.ko (reuse from stock /vendor)
+  vcp.ko (reuse from stock /vendor)
+  vdec-fmt.ko (reuse from stock /vendor)
+  xiaomi.ko (reuse from stock /vendor)
+  xiaomi_spi_tee.ko (reuse from stock /vendor)
+  zram.ko (reuse from stock /vendor)
+  zsmalloc.ko (reuse from stock /vendor)
