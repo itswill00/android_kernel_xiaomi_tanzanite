@@ -1,0 +1,221 @@
+vendor_dtb model=MT6789 compat=mediatek,MT6789
+top nodes:
+ /aliases
+ /chosen
+ /cpus
+ /swpm
+ /psci
+ /lastbus
+ /firmware
+ /sspm@10400000
+ /ssram1@10450000
+ /ssram2@10460000
+ /tinysys_mbox@10451000
+ /memory
+ /reserved-memory
+ /memory-ssmr-features
+ /ssmr
+ /mrdump_ext_rst
+ /interrupt-controller
+ /thermal-ntc1
+ /thermal-ntc2
+ /thermal-ntc3
+ /thermal-ntc4
+ /mt6366_temp
+ /md-cooler
+ /charger-cooler
+ /backlight-cooler
+ /therm_intf@00114000
+ /thermal-zones
+ /qos@0011bb00
+ /cm_mgr@0c530000
+ /fpsgo
+ /mcupm@0c540000
+ /utos
+ /utos_tester
+ /timer
+ /hwrng
+ /atf_logger
+ /cache-parity
+ /dcm@10001000
+ /clk_ao
+ /clkitg
+ /disable_unused
+ /clkchk
+ /pdchk
+ /clocks
+ /cpuhvfs@00114400
+ /syscon@10000000
+ /syscon@10001000
+ /touch
+ /xiaomi_touch
+ /power-controller@10006000
+ /syscon@1000C000
+ /fhctl@1000ce00
+ /cam_qos_legacy
+ /cam_mem
+ /camisp_legacy@1a000000
+ /cam1_legacy@1a030000
+ /cam1_inner_legacy@1a038000
+ /camsys_rawa_legacy@1a04f000
+ /cam2_legacy@1a050000
+ /cam2_inner_legacy@1a058000
+ /camsys_rawb_legacy@1a06f000
+ /cam3_legacy@1a070000
+ /cam3_inner_legacy@1a078000
+ /camsys_rawc_legacy@1a08f000
+ /camsv2_legacy@1a092000
+ /camsv3_legacy@1a093000
+ /camsv4_legacy@1a094000
+ /camsv5_legacy@1a095000
+ /camsv6_legacy@1a096000
+ /camsv7_legacy@1a097000
+ /syscon@1101B000
+ /syscon@11210000
+ /syscon@11E02000
+ /syscon@11EB4000
+ /syscon@11F01000
+ /syscon@13fbf000
+ /syscon@14000000
+ /syscon@15020000
+ /syscon@1602f000
+ /syscon@17000000
+ /syscon@1a000000
+ /syscon@1a04f000
+ /syscon@1a06f000
+ /flashlight_core
+ /flashlights_mt6789
+ /mtk_composite_v4l2_1
+ /camera_af_hw_node
+ /syscon@1b000000
+ /syscon@1f000000
+ /opp-table-disp0
+ /opp-table-mdp0
+ /opp-table-venc
+ /opp-table-vdec
+ /opp-table-cam
+ /opp-table-img
+ /opp-table-ipe
+ /mmdvfs-debug
+ /gpio107status
+ /mmdvfs
+ /low_battery_throttling
+ /pbm
+ /mdpm
+ /cpu_power_throttling
+ /md_power_throttling
+ /bp_thl
+ /soc
+ /mtk_lpm
+ /spmtwam@10006000
+ /lk_charger
+ /pe
+ /pe2
+ /pdc
+ /pe4
+ /pe5
+ /charger
+ /rt-pd-manager
+ /pd_adapter
+ /mtk_ctd
+ /hq_chg_manager
+ /hq_cp_policy
+ /xm_chg_dfs
+ /hq_qc_policy
+ /hq_pd_adapter
+ /xm_pd_adapter
+ /onewire_gpio
+ /maxim_ds28e16
+ /acl_slg
+ /st_stick
+ /subpmic_pmu_eint
+ /mtk_ssc
+ /gps@18c00000
+ /met
+ /trusty
+ /nebula
+ /__symbols__
+
+dtbo fragments: 82
+fragment@0 target=target = [4294967295] overlay_nodes=['cam0@0', 'cam0@1', 'cam1@0', 'cam1@1', 'cam2@0', 'cam2@1', 'cam3@0', 'cam3@1'] props=[]
+fragment@1 target=target = [4294967295] overlay_nodes=[] props=['pinctrl-names', 'pinctrl-0', 'pinctrl-1', 'pinctrl-2', 'pinctrl-3', 'pinctrl-4', 'pinctrl-5', 'pinctrl-6']
+fragment@2 target=target = [4294967295] overlay_nodes=['camera_eeprom0@50', 'camera_main@1a'] props=['status', 'clock-frequency', '#address-cells', '#size-cells']
+fragment@3 target=target = [4294967295] overlay_nodes=['camera_eeprom1@51', 'camera_eeprom2@52', 'camera_sub@1a', 'camera_main_two@78'] props=['status', 'clock-frequency', '#address-cells', '#size-cells']
+fragment@4 target=target = [4294967295] overlay_nodes=['camera_eeprom3@53', 'camera_sub_two@6c'] props=['status', 'clock-frequency', '#address-cells', '#size-cells']
+fragment@5 target=target = [4294967295] overlay_nodes=['subpmic_core@61', 'subpmic_core_nu@30', 'subpmic_core@3d'] props=['status', 'clock-frequency']
+fragment@6 target=target = [4294967295] overlay_nodes=['sc660x-pd@62', 'nu6601-pd@33', 'sy6976-pd@3e'] props=['clock-frequency']
+fragment@7 target=target = [4294967295] overlay_nodes=['sc8541@master'] props=['clock-frequency']
+fragment@8 target=target = [4294967295] overlay_nodes=['sc8541@slave'] props=['clock-frequency']
+fragment@9 target=target = [4294967295] overlay_nodes=['nu2115@master'] props=['clock-frequency']
+fragment@10 target=target = [4294967295] overlay_nodes=['nu2115@slave'] props=['clock-frequency']
+fragment@11 target=target = [4294967295] overlay_nodes=['step_jeita'] props=['status']
+fragment@12 target=target = [4294967295] overlay_nodes=[] props=['hq,thermal-enable', 'hq,pd-thermal-mitigation', 'hq,qc2-thermal-mitigation']
+fragment@13 target=target = [4294967295] overlay_nodes=[] props=['status', 'compatible', 'max_vbus', 'max_ibus_qc3_18w', 'max_ibat_qc3_18w', 'max_ibus_qc3_27w', 'max_ibat_qc3_27w', 'max_ibus_qc35']
+fragment@14 target=target = [4294967295] overlay_nodes=[] props=['hq_chg_manager,cyclecount', 'hq,pd-thermal-mitigation-fast']
+fragment@15 target=target = [4294967295] overlay_nodes=[] props=['status']
+fragment@16 target=target = [4294967295] overlay_nodes=['bq25960-charger@65'] props=['clock-frequency', '#address-cells', '#size-cells']
+fragment@17 target=target = [4294967295] overlay_nodes=['w1_pins'] props=[]
+fragment@18 target=target = [4294967295] overlay_nodes=[] props=['compatible', 'gpios', 'pinctrl-names', 'pinctrl-0', 'status']
+fragment@19 target=target = [4294967295] overlay_nodes=[] props=['compatible', 'auth_name', 'status']
+fragment@20 target=target = [4294967295] overlay_nodes=[] props=['compatible', 'auth_name', 'status']
+fragment@21 target=target = [4294967295] overlay_nodes=[] props=['compatible', 'auth_name', 'status']
+fragment@22 target=target = [4294967295] overlay_nodes=[] props=['status', 'hq_chg_manager,charge_control_limit_max', 'hq_chg_manager,QC3_mode', 'hq_chg_manager,usb_charger_current', 'hq_chg_manager,float_charger_current', 'hq_chg_manager,cdp_charger_current', 'hq_chg_manager,ac_charger_current', 'hq_chg_manager,hvdcp_charger_current']
+fragment@23 target=target = [4294967295] overlay_nodes=[] props=['status', 'hq_cp_policy,cv_offset', 'hq_cp_policy,exit_cc', 'hq_cp_policy,min_vbat', 'hq_cp_policy,step_volt', 'hq_cp_policy,warm_temp', 'hq_cp_policy,max_request_volt', 'hq_cp_policy,min_request_volt']
+fragment@24 target=target = [4294967295] overlay_nodes=[] props=['status', 'pd_adapter,name']
+fragment@25 target=target = [4294967295] overlay_nodes=[] props=['status', 'adapter_name']
+fragment@26 target=target = [4294967295] overlay_nodes=[] props=['status']
+fragment@27 target=target = [4294967295] overlay_nodes=['subpmic_core_nu@30', 'nu6601-pd@33', 'sc660x-pd@62', 'sy6976-pd@3e'] props=[]
+fragment@28 target=target = [4294967295] overlay_nodes=['nu2115@master'] props=[]
+fragment@29 target=target = [4294967295] overlay_nodes=['step_jeita', 'ffc_chg_cfg_bat_cycle', 'normal_chg_cfg_bat_cycle', 'eea_normal_chg_cfg_bat_cycle'] props=['hq_chg_manager,input_power_over', 'hq_chg_manager,model_name', 'hq_chg_manager,charge_control_limit_max', 'hq,pd-thermal-mitigation', 'hq,qc2-thermal-mitigation', 'hq,pd-thermal-mitigation-fast']
+fragment@30 target=target = [4294967295] overlay_nodes=[] props=['battery0_profile_t0_num', 'battery0_profile_t0_col', 'battery0_profile_t0', 'battery0_profile_t1_num', 'battery0_profile_t1_col', 'battery0_profile_t1', 'battery0_profile_t2_num', 'battery0_profile_t2_col']
+fragment@31 target=target = [4294967295] overlay_nodes=['sia81xx_gpio_R'] props=[]
+fragment@32 target=target = [4294967295] overlay_nodes=['si_pa_L', 'si_pa_R'] props=[]
+fragment@33 target=target = [4294967295] overlay_nodes=[] props=['si,sia81xx-max-num', 'si,sia81xx-aux-devs', 'si,sia81xx-aux-devs-prefix']
+fragment@34 target=target = [4294967295] overlay_nodes=['sipa_i2c_L@56', 'sipa_i2c_R@29', 'aw87xxx_pa_5B@5B', 'aw87xxx_pa_58@58'] props=['clock-frequency', 'mediatek,use-open-drain']
+fragment@35 target=target = [4294967295] overlay_nodes=[] props=[]
+fragment@36 target=target = [4294967295] overlay_nodes=[] props=['cd-gpios']
+fragment@37 target=target = [4294967295] overlay_nodes=['backlight'] props=['compatible']
+fragment@38 target=target = [4294967295] overlay_nodes=['lcm_led_en1_gpio', 'lcm_led_en0_gpio', 'lcm_rst_out1_gpio', 'lcm_rst_out0_gpio', 'lcm_dsi_te'] props=[]
+fragment@39 target=target = [4294967295] overlay_nodes=[] props=['pinctrl-names', 'pinctrl-0', 'pinctrl-1', 'pinctrl-2', 'pinctrl-3', 'pinctrl-4', 'status']
+fragment@40 target=target = [4294967295] overlay_nodes=[] props=['pinctrl-names', 'pinctrl-0', 'pinctrl-1', 'pinctrl-2', 'status']
+fragment@41 target=target = [4294967295] overlay_nodes=['panel1@0', 'ports'] props=['status', '#address-cells', '#size-cells']
+fragment@42 target=target = [4294967295] overlay_nodes=['gps_default', 'gps_l1_lna@0', 'gps_l1_lna@1', 'gps_l1_lna@2', 'gps_l5_lna@0', 'gps_l5_lna@1', 'gps_l5_lna@2'] props=[]
+fragment@43 target=target = [4294967295] overlay_nodes=[] props=['pinctrl-names', 'pinctrl-0', 'pinctrl-1', 'pinctrl-2', 'pinctrl-3', 'pinctrl-4', 'pinctrl-5', 'pinctrl-6']
+fragment@44 target=target = [4294967295] overlay_nodes=['focaltech@38'] props=['status', 'clock-frequency']
+fragment@45 target=target = [4294967295] overlay_nodes=['lm3643@63'] props=[]
+fragment@46 target=target = [4294967295] overlay_nodes=['default', 'hwen_high', 'hwen_low'] props=[]
+fragment@47 target=target = [4294967295] overlay_nodes=['port@0', 'port@1'] props=[]
+fragment@48 target=target = [4294967295] overlay_nodes=[] props=[]
+fragment@49 target=target = [4294967295] overlay_nodes=['camera_main_af@18', 'camera_main_three_af@0c'] props=[]
+fragment@50 target=target = [4294967295] overlay_nodes=[] props=['camaf_m1_pmic-supply', 'camaf_m2_pmic-supply', 'camaf_m3_pmic-supply', 'status']
+fragment@51 target=target = [4294967295] overlay_nodes=['fingerprint@0'] props=['#address-cells', '#size-cells']
+fragment@52 target=target = [4294967295] overlay_nodes=['state_gpio_mode', 'state_spi_mode', 'state_reset_high', 'state_reset_low', 'state_eint_default', 'state_eint_pulldown'] props=[]
+fragment@53 target=target = [4294967295] overlay_nodes=['speaker_amp@5c'] props=[]
+fragment@54 target=target = [4294967295] overlay_nodes=['nfc@28'] props=[]
+fragment@55 target=target = [4294967295] overlay_nodes=['MTEE', 'SecureVideoPath'] props=[]
+fragment@56 target=target = [4294967295] overlay_nodes=[] props=['svp-region-based-size', 'svp-page-based-size']
+fragment@57 target=target = [4294967295] overlay_nodes=['mediatek,speaker-codec'] props=['mediatek,spk-i2s']
+fragment@58 target=target = [4294967295] overlay_nodes=[] props=['pd_vbus_upper_bound']
+fragment@59 target=target = [4294967295] overlay_nodes=[] props=['status']
+fragment@60 target=target = [4294967295] overlay_nodes=[] props=['status']
+fragment@61 target=target = [4294967295] overlay_nodes=[] props=['status']
+fragment@62 target=target = [4294967295] overlay_nodes=[] props=['status']
+fragment@63 target=target = [4294967295] overlay_nodes=[] props=['status']
+fragment@64 target=target = [4294967295] overlay_nodes=[] props=['status']
+fragment@65 target=target = [4294967295] overlay_nodes=[] props=['status']
+fragment@66 target=target = [4294967295] overlay_nodes=[] props=['status']
+fragment@67 target=target = [4294967295] overlay_nodes=[] props=['status']
+fragment@68 target=target = [4294967295] overlay_nodes=['scp@10500000', 'regulator_vibrator', 'esd_flag'] props=[]
+fragment@69 target=target = [4294967295] overlay_nodes=[] props=['mediatek,eye-vrt', 'mediatek,eye-term', 'mediatek,rev4', 'mediatek,rx_sqth', 'mediatek,discth', 'mediatek,rev6', 'mediatek,eye-vrt-host', 'mediatek,eye-term-host']
+fragment@70 target=target = [4294967295] overlay_nodes=[] props=['GPIO_SIM1_HOT_PLUG', 'GPIO_FDD_BAND_SUPPORT_DETECT_3RD_PIN', 'GPIO_FDD_BAND_SUPPORT_DETECT_4TH_PIN', 'GPIO_FDD_BAND_SUPPORT_DETECT_2ND_PIN', 'GPIO_FDD_BAND_SUPPORT_DETECT_1ST_PIN', 'GPIO_SIM1_SCLK', 'GPIO_SIM1_SRST', 'GPIO_SIM1_SIO']
+fragment@71 target=target = [4294967295] overlay_nodes=[] props=['gpio_init_default']
+fragment@72 target=target = [4294967295] overlay_nodes=[] props=['interrupt-parent', 'interrupts', 'status']
+fragment@73 target=target = [4294967295] overlay_nodes=[] props=['interrupt-parent', 'interrupts', 'status']
+fragment@74 target=target = [4294967295] overlay_nodes=[] props=['interrupt-parent', 'interrupts', 'status']
+fragment@75 target=target = [4294967295] overlay_nodes=[] props=['interrupt-parent', 'interrupts', 'status']
+fragment@76 target=target = [4294967295] overlay_nodes=[] props=['compatible', 'interrupts', 'debounce', 'dedicated', 'src_pin', 'sockettype', 'status']
+fragment@77 target=target = [4294967295] overlay_nodes=[] props=['compatible', 'interrupts', 'debounce', 'dedicated', 'src_pin', 'sockettype', 'status']
+fragment@78 target=target = [4294967295] overlay_nodes=[] props=['mediatek,key-debounce', 'mediatek,sw-pwrkey', 'mediatek,hw-pwrkey', 'mediatek,sw-rstkey', 'mediatek,hw-rstkey', 'mediatek,use-extend-type', 'mediatek,hw-map-num', 'mediatek,hw-init-map']
+__symbols__ target=None overlay_nodes=[] props=[]
+__fixups__ target=None overlay_nodes=[] props=[]
+__local_fixups__ target=None overlay_nodes=[] props=[]

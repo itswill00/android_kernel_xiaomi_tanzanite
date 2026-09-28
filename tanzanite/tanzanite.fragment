@@ -1,0 +1,8 @@
+# Tanzanite base deltas vs emerald/GKI (from /proc/config.gz OS2.0.207.0.VOGMIXM, 5.10.226)
+CONFIG_LOCALVERSION=""
+CONFIG_LOCALVERSION_AUTO=y
+CONFIG_LOG_BUF_SHIFT=17
+CONFIG_PRINTK_SAFE_LOG_BUF_SHIFT=13
+CONFIG_MTK_TIMER=y
+# NOTE: base Image is ~pure GKI. All MT6789/Xiaomi drivers are vendor DLKM prebuilt in /vendor/lib/modules
+# (vermagic 5.10.226-android12-9-g2b8fcc9ee600). Do NOT enable emerald out-of-tree symbols in base.
